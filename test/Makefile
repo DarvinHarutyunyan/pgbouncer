@@ -39,7 +39,7 @@ include ../config.mak
 include ../lib/mk/antimake.mk
 
 check: all
-	./test.sh
+	./pytest.sh
 	./hba_test
 ifeq ($(tls_support),yes)
 	$(MAKE) -C ssl check
